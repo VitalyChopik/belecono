@@ -1,0 +1,123 @@
+.stages {
+  margin-top: rem(220);
+
+  @include media-mx(992) {
+    margin-top: rem(80);
+  }
+
+  &__heading {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 rem(20);
+
+    @include media-mx(992) {
+      height: rem(100);
+      align-items: center;
+    }
+  }
+
+  &__heading-title {
+    text-align: center;
+
+  }
+
+  &__heading-double {
+    text-align: center;
+    right: 0;
+  }
+
+  &__container {}
+
+  &__text {
+    max-width: rem(860);
+    text-align: center;
+    margin: 0 auto;
+    color: #363636;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+
+    @include media-mx(992) {
+      font-size: 15px;
+    }
+  }
+
+  &__block {}
+
+  &__wrapper {
+    margin-top: rem(100);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: rem(20);
+
+    @include media-mx(992) {
+      margin-top: rem(40);
+    }
+
+    @include media-mx(767) {
+      display: flex;
+      gap: 0;
+      align-items: start;
+    }
+  }
+
+  &__box {
+    border-radius: 20px;
+    background: linear-gradient(72deg, #339EFF -84.85%, #FF7BAC 89.82%), #FFF;
+    position: relative;
+    padding: rem(40);
+    padding-right: rem(50);
+
+    @include media-mx(767) {
+      padding: rem(30);
+    }
+  }
+
+  &__box-stage {
+    position: absolute;
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 260px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 70%;
+    z-index: 0;
+    opacity: 0.1;
+    top: rem(25);
+    right: rem(10);
+
+    @include media-mx(992) {
+      font-size: 199px;
+    }
+  }
+
+  &__box-title {
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 129.023%;
+    margin-bottom: rem(25);
+
+    @include media-mx(992) {
+      margin-bottom: rem(20);
+    }
+  }
+
+  &__box-text {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+
+    @include media-mx(992) {
+      font-size: 16px;
+    }
+
+  }
+}
