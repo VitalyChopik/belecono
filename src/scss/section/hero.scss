@@ -98,6 +98,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    max-width: rem(410);
 
     @include media-mx(1280) {
       color: #fff;
