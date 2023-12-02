@@ -80,3 +80,37 @@ headerLinks.forEach(item => {
   })
 })
 heroEffects();
+
+// Получаем все элементы с классом contact__form-input
+const inputBoxs = document.querySelectorAll('.contact__form-box');
+
+// Добавляем обработчик события для каждого input
+inputBoxs.forEach(function (inputBox) {
+  const input = inputBox.querySelector('.contact__form-input');
+  const label = inputBox.querySelector('.contact__form-label');
+  input.addEventListener('input', function () {
+    label.style.display = this.value ? 'none' : 'flex';
+  });
+});
+
+
+// const anchorLinks = document.querySelectorAll('.footer__navigation-link, .footer__navigation-btn, .menu__link,.header__btn');
+// anchorLinks.forEach(anchorLink => {
+//   anchorLink.addEventListener('click', (event) => {
+//     event.preventDefault();
+
+//     const targetId = anchorLink.getAttribute('href').substring(1);
+//     const targetElement = document.getElementById(targetId);
+
+//     if (targetElement) {
+//       const offset = -65;
+
+//       const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
+
+//       window.scrollTo({
+//         top: targetPosition,
+//         behavior: 'smooth'
+//       });
+//     }
+//   })
+// })

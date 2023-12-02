@@ -27,6 +27,11 @@
       padding-top: rem(10);
       padding-bottom: rem(10);
     }
+
+    @include media-mx(992) {
+      padding-top: rem(10);
+      padding-bottom: rem(10);
+    }
   }
 
   &__logo {}
@@ -136,7 +141,15 @@
 
         &:hover {
           color: #000;
+          background: var(--3, #FF7BAC);
         }
+      }
+    }
+
+    .menu-open & {
+      &:hover {
+        color: #fff;
+        background: var(--3, #FF7BAC);
       }
     }
   }
@@ -150,8 +163,8 @@
   @include media-mx(1100) {
     display: block;
     position: relative;
-    width: rem(30);
-    height: rem(18);
+    width: rem(22);
+    height: rem(20);
     cursor: pointer;
     z-index: 5;
     background: none;
@@ -164,9 +177,11 @@
       right: 0;
       position: absolute;
       width: 100%;
-      height: rem(3);
+      height: 4px;
       background-color: #fff;
       border-radius: 10px;
+
+
 
       @include media-mx(1280) {
         background: var(--3, #FF7BAC);
@@ -182,7 +197,7 @@
     }
 
     span {
-      top: calc(50% - rem(1));
+      top: calc(50% - rem(2));
     }
 
     .menu-open & {
@@ -191,12 +206,12 @@
       }
 
       &::before {
-        top: calc(50% - rem(1));
+        top: calc(50% - rem(2));
         transform: rotate(-45deg);
       }
 
       &::after {
-        bottom: calc(50% - rem(1));
+        bottom: calc(50% - rem(2));
         transform: rotate(45deg);
       }
     }

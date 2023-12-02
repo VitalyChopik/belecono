@@ -13,6 +13,7 @@
 
   @include media-mx(992) {
     padding: rem(40) 0 rem(45);
+    min-height: 90vh;
   }
 
   &:before {
@@ -72,7 +73,8 @@
 
     @include media-mx(992) {
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
+      min-height: 60vh;
     }
   }
 
@@ -165,6 +167,10 @@
 
     @include media-mx(992) {
       display: flex;
+    }
+
+    &:hover {
+      color: #000;
     }
   }
 

@@ -1,8 +1,8 @@
 .about {
-  margin-top: rem(200);
+  padding-top: rem(200);
 
   @include media-mx(992) {
-    margin-top: rem(70);
+    padding-top: rem(70);
   }
 
   &__container {
@@ -30,7 +30,13 @@
     }
   }
 
-  &__heading-double {}
+  &__heading-double {
+    @include media-mx(1280) {
+      text-align: center;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
 
   &__text {
     color: #363636;
@@ -42,6 +48,8 @@
     strong {
       font-weight: 700;
     }
+
+
   }
 
   &__progress {
@@ -142,10 +150,14 @@
       content: "";
       display: flex;
       width: rem(62);
-      height: 2px;
+      height: 4px;
       border-radius: rem(20);
       background: var(--3, #FF7BAC);
       margin-top: rem(10);
+
+      @include media-mx(992) {
+        height: 5px;
+      }
     }
   }
 

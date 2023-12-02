@@ -16,7 +16,7 @@ const slider = (stagesBlock, contactBlock) => {
             el: '.swiper-pagination',
             clickable: true,
           },
-          autoHeight: true,
+          // autoHeight: true,
         });
       }
       if (!contactSliderStatus) {
