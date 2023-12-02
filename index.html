@@ -12,9 +12,9 @@
   <title>Belocono</title>
 
   <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css?_v=20231130212030">
+  <link rel="stylesheet" href="css/main.min.css?_v=20231202161642">
 
-  <script defer="defer" src="js/main.min.js?_v=20231130212030"></script>
+  <script defer="defer" src="js/main.min.js?_v=20231202161642"></script>
 </head>
 
 <body>
@@ -59,8 +59,8 @@
     <a href="#contacts" class="hero__btn">Contacts us</a>
   </div>
   <div class="hero__icon hero__icon-1"><img src="images/icon-1.svg" alt=""></div>
-  <div class="hero__icon hero__icon-2"><img src="images/icon-2.svg" alt=""></div>
-  <div class="hero__icon hero__icon-3"><img src="images/icon-3.svg" alt=""></div>
+  <div class="hero__icon hero__icon-2"><img src="images/icon-3.svg" alt=""></div>
+  <div class="hero__icon hero__icon-3"><img src="images/icon-2.svg" alt=""></div>
 </div>
       <div class="about" id="about">
   <div class="about__container">
@@ -299,9 +299,21 @@
         <form class="contact__form-content">
           <input type="hidden" name="_subject" value="New submission!">
           <input type="hidden" name="_captcha" value="false">
-          <input type="text" name="Name" class="contact__form-input" required placeholder="Name *">
-          <input type="email" name="E-mail" class="contact__form-input" required placeholder="E-mail *">
-          <input type="text" name="Message" class="contact__form-input" placeholder="Message">
+          <div class="contact__form-box">
+            <input type="text" name="Name" class="contact__form-input" required>
+            <span class="contact__form-label">Name <sup>*</sup></span>
+          </div>
+          <div class="contact__form-box">
+            <input type="email" name="E-mail" class="contact__form-input" required>
+            <span class="contact__form-label">E-mail <sup>*</sup></span>
+          </div>
+          <div class="contact__form-box">
+            <input type="text" name="Message" class="contact__form-input">
+            <span class="contact__form-label">Message</span>
+          </div>
+
+
+
           <button type="submit" class="contact__form-button">Send message</button>
           <div class="spinner">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: rgba(0, 0, 0, 0); display: block; shape-rendering: auto;" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
