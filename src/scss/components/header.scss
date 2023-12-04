@@ -4,10 +4,11 @@
   z-index: 50;
   position: fixed;
   top: 0;
+  transform: translate3d(0, 0, 0);
 
   @include media-mx(1280) {
     background-color: #fff;
-    position: sticky;
+    position: fixed;
   }
 
   .header-is-sticky & {
@@ -105,6 +106,7 @@
       transform: translateX(100%);
       pointer-events: none;
       transition: all 0.5s;
+      height: 100vh;
 
       .menu-open & {
         pointer-events: all;
