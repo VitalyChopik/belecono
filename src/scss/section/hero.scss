@@ -164,13 +164,15 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: all 0.5s;
 
     @include media-mx(992) {
       display: flex;
     }
 
     &:hover {
-      color: #000;
+      color: #fff;
+      background: #000;
     }
   }
 
