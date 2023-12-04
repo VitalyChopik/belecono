@@ -132,26 +132,19 @@
     }
 
     &:hover {
-      color: #fff;
-      background: #000;
+      background: linear-gradient(70deg, #EB6798 6.44%, #1F8AEB 93.97%);
+      color: #FFF;
     }
 
     .header-is-sticky & {
       @include media-mn(1100) {
         color: #fff;
         background: var(--3, #FF7BAC);
-
-        &:hover {
-          color: #fff;
-          background: #000;
-        }
       }
-    }
 
-    .menu-open & {
       &:hover {
-        color: #fff;
-        background: var(--3, #FF7BAC);
+        background: linear-gradient(70deg, #EB6798 6.44%, #1F8AEB 93.97%);
+        color: #FFF;
       }
     }
   }
